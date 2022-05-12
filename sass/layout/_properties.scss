@@ -5,16 +5,16 @@
     background-color: var(--main-bcg-color);
 }
 
-.properties-list {
+.properties__list {
     display: flex;
     justify-content: center;
 }
 
-.properties-item {
+.properties__item {
     max-width: 270px;
 }
 
-.properties-link {
+.properties__link {
     width: 270px;
     height: 120px;
 
@@ -27,15 +27,15 @@
     background-color: var(--prorerties-background-color);
 }
 
-.properties-link:not(:last-child) {
+.properties__link:not(:last-child) {
     margin-right: 30px;
 }
 
-.properties-item:not(:last-child) {
+.properties__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.properties-title {
+.properties__top-text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -47,7 +47,7 @@
     color: var(--properties-title-color);
 }
 
-.properties-text {
+.properties__bottom-text {
     font-size: 14px;
     line-height: 1.71;
 
