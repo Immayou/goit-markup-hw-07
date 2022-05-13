@@ -5,12 +5,9 @@
 }
 
 .clients-title {
+    font-family: var(--font-family-main);
     margin-top: 0;
     margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.17;
-
-    color: var(--clients-title-color);
 }
 
 .clients-list {
