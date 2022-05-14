@@ -12,6 +12,10 @@
 
 .properties__item {
     max-width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .properties__link {
@@ -25,14 +29,10 @@
     border-radius: 4px;
 
     background-color: var(--prorerties-background-color);
-}
 
-.properties__link:not(:last-child) {
-    margin-right: 30px;
-}
-
-.properties__item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 .properties__top-text {

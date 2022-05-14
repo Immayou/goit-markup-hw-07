@@ -1,8 +1,11 @@
 @import "./base/reset";
 @import "./base/basic";
-@import "./utils/container";
+@import "./components/container";
 @import "./utils/hidden";
 @import "./utils/vars";
+@import "./components/modal";
+@import "./components/logo-blue+black";
+@import "./components/logo-blue+white";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/properties";
@@ -18,6 +21,7 @@
 @import "./components/title";
 @import "./components/title";
 @import "./components/address";
+
 
 
 
