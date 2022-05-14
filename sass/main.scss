@@ -1,10 +1,9 @@
-@import "./base/reset";
-@import "./base/basic";
+@import "./base/common";
 @import "./components/container";
 @import "./utils/hidden";
 @import "./utils/vars";
 @import "./components/modal";
-@import "./components/logo";
+@import "./utils/placeholders";
 @import "./components/logo-blue+black";
 @import "./components/logo-blue+white";
 @import "./layout/header";

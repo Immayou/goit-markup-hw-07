@@ -1,4 +1,6 @@
 .logo--black {
+    @extend %logo;
+    @extend %link;
     color: var(--logo-black-color);
 
     &:hover,

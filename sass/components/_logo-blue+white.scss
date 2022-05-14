@@ -1,4 +1,6 @@
 .logo--white {
+    @extend %link;
+    @extend %logo;
     color: var(--logo-white-color);
 
     &:hover,
