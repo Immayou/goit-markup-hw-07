@@ -36,12 +36,9 @@
     color: var(--footer-main-text-color);
     background-color: var(--footer-background-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .mailing__actions&:;
-    hover,
-    .mailing__actions&:focus;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-
-        {
+    
+    .mailing__actions:hover &,
+    .mailing__actions:focus & {
         border-color: var(--accent-color);
     }
 }

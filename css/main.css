@@ -81,6 +81,55 @@ button {
   --font-family-secondary: Raleway, sans-serif;
 }
 
+.logo {
+  display: block;
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo--black {
+  color: var(--logo-black-color);
+}
+.logo--black:hover, .logo--black:focus {
+  color: var(--accent-color);
+}
+
+.logo--main {
+  color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo--main:hover, .logo--main:focus {
+  color: var(--logo-color);
+}
+.logo--black:hover .logo--main, .logo--black:focus .logo--main {
+  color: var(--logo-black-color);
+}
+
+.logo--white {
+  color: var(--logo-white-color);
+}
+.logo--white:hover, .logo--white:focus {
+  color: var(--accent-color);
+}
+
+.footer__logo--main {
+  color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__logo--main:hover, .footer__logo--main:focus {
+  color: var(--logo-white-color);
+}
+.logo--white:hover .footer__logo--main, .logo--white:focus .footer__logo--main {
+  color: var(--logo-white-color);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -139,6 +188,9 @@ button {
 .properties__item {
   max-width: 270px;
 }
+.properties__item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .properties__link {
   width: 270px;
@@ -150,12 +202,7 @@ button {
   border-radius: 4px;
   background-color: var(--prorerties-background-color);
 }
-
 .properties__link:not(:last-child) {
-  margin-right: 30px;
-}
-
-.properties__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -239,7 +286,6 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -289,9 +335,7 @@ button {
   -ms-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team__contakt-link:hover,
-.team__contakt-link:focus {
+.team__contakt-link:hover, .team__contakt-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -299,9 +343,7 @@ button {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team__contakt-link:hover .team__contakt-icon,
-.team__contakt-link:focus .team__contakt-icon {
+.team__contakt-link:hover .team__contakt-icon, .team__contakt-link:focus .team__contakt-icon {
   fill: #FFFFFF;
 }
 
@@ -370,27 +412,9 @@ button {
   display: flex;
 }
 
-.logo--white:hover, .logo--white:focus {
-  color: var(--accent-color);
-}
-
 .footer__logo--indent {
   margin-top: 0;
   margin-bottom: 20px;
-}
-
-.footer__logo--main {
-  color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__logo--main:hover,
-.footer__logo--main:focus {
-  color: var(--logo-white-color);
-}
-
-.logo--white:hover .footer__logo--main, .logo--white:focus .footer__logo--main {
-  color: var(--logo-white-color);
 }
 
 .footer__address {
@@ -401,132 +425,13 @@ button {
   margin-right: 93px;
 }
 
-.connection-content {
-  padding-top: 72px;
-  padding-bottom: 100px;
-}
-
-.connection-content__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--footer-main-text-color);
-}
-
 .footer__connection-content__title {
   margin-top: 0px;
   margin-bottom: 20px;
 }
 
-.soc-media__list {
-  display: flex;
-  justify-content: center;
-}
-
-.soc-media__link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -moz-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -ms-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.soc-media__link:hover,
-.soc-media__link:focus {
-  background-color: var(--accent-color);
-}
-
-.soc-media__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.soc-media__icon {
-  fill: #FFFFFF;
-}
-
-.mailing {
-  padding-top: 72px;
-  padding-bottom: 94px;
-}
-
 .footer__mailing {
   margin-right: auto;
-}
-
-.mailing__title {
-  margin: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--footer-main-text-color);
-}
-
-.mailing__actions {
-  display: flex;
-}
-
-.mailing__input {
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
-  padding: 15px 16px;
-  font-size: 16px;
-  line-height: 12.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  outline: none;
-  color: var(--footer-main-text-color);
-  background-color: var(--footer-background-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mailing__actions > .mailing__input:hover,
-.mailing__actions > .mailing__input:focus {
-  border-color: var(--accent-color);
-}
-
-.mailing__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mailing__button:hover,
-.mailing__button:focus {
-  background-color: #FFFFFF;
-}
-
-.mailing__button-name {
-  margin-right: 10px;
-}
-
-.mailing__icon {
-  fill: #FFFFFF;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -ms-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mailing__button:hover .mailing__icon,
-.mailing__button:focus .mailing__icon {
-  fill: var(--accent-color);
 }
 
 .examples {
@@ -717,43 +622,6 @@ button {
   fill: var(--accent-color);
 }
 
-.logo {
-  display: block;
-  font-family: var(--font-family-secondary);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo--black {
-  color: var(--logo-black-color);
-}
-
-.logo--white {
-  color: var(--logo-white-color);
-}
-
-.logo--black:hover,
-.logo--black:focus {
-  color: var(--accent-color);
-}
-
-.logo--main {
-  color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.logo--main:hover, .logo--main:focus {
-  color: var(--logo-color);
-}
-.logo--black:hover .logo--main, .logo--black:focus .logo--main {
-  color: var(--logo-black-color);
-}
-
 .navigation {
   display: flex;
   align-items: center;
@@ -808,11 +676,115 @@ button {
   color: var(--title-color);
 }
 
-.title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-color);
+.connection-content {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.connection-content__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--footer-main-text-color);
+}
+
+.soc-media__list {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-media__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-media__link:hover, .soc-media__link:focus {
+  background-color: var(--accent-color);
+}
+
+.soc-media__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-media__icon {
+  fill: #FFFFFF;
+}
+
+.mailing {
+  padding-top: 72px;
+  padding-bottom: 94px;
+}
+
+.mailing__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--footer-main-text-color);
+}
+
+.mailing__actions {
+  display: flex;
+}
+
+.mailing__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 12.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  color: var(--footer-main-text-color);
+  background-color: var(--footer-background-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mailing__actions:hover .mailing__input, .mailing__actions:focus .mailing__input {
+  border-color: var(--accent-color);
+}
+
+.mailing__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mailing__button:hover, .mailing__button:focus {
+  background-color: #FFFFFF;
+}
+
+.mailing__button-name {
+  margin-right: 10px;
+}
+
+.mailing__icon {
+  fill: #FFFFFF;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mailing__button:hover .mailing__icon, .mailing__button:focus .mailing__icon {
+  fill: var(--accent-color);
 }
 
 .address {
